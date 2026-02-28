@@ -6,3 +6,15 @@
 
 # Sensitive
 *.tfvars
+# SSH keys (DO NOT COMMIT)
+roboshop-key
+roboshop-key.pub
+roboshop-key-ppk.ppk
+gitroboshop-key
+*.pem
+*.ppk
+
+# OS / editor junk
+.git/
+.DS_Store
+Thumbs.db
