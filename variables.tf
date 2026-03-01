@@ -35,3 +35,7 @@ variable "sg_cidr_blocks" {
   default     = ["0.0.0.0/0"]
 }
 
+variable "instances_names" {
+    type = list
+    default = ["mongodb", "redis", "mysql", "rabbitmq", "catalogue", "user", "cart", "shipping", "payment", "frontend"]
+}
