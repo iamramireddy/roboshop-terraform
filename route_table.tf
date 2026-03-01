@@ -7,6 +7,7 @@ route {
 
   tags = {
     Name        = "${var.projectname}-public-rt"
+    Terraform = true
   }
 }
 

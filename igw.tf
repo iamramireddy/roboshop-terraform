@@ -3,5 +3,6 @@ resource "aws_internet_gateway" "roboshop_igw" {
 
   tags = {
     Name = "${var.projectname}-igw"
+    Terraform = true
   }
 }

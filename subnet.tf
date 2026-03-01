@@ -5,6 +5,7 @@ resource "aws_subnet" "roboshop_private_subnet" {
 
   tags = {
     Name = "${var.projectname}_private_subnet"
+    Terraform = true
   }
 }
 
@@ -16,6 +17,7 @@ resource "aws_subnet" "roboshop_public_subnet" {
 
   tags = {
     Name = "${var.projectname}_public_subnet"
+    Terraform = true
   }
 }
 
@@ -25,5 +27,6 @@ resource "aws_subnet" "roboshop_public_subnet" {
 
 #  tags = {
 #    Name = "${var.projectname}_network_interface"
+#    Terraform = true
 #  }
 #}

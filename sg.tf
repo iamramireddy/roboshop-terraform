@@ -17,5 +17,6 @@ resource "aws_security_group" "sg_allow_tls" {
 
   tags = {
     Name = "${var.projectname}-sg"
+    Terraform = true
   }
 }

@@ -14,5 +14,6 @@ resource "aws_instance" "roboshop_ec2" {
   tags = {
     Environment = var.environment
     Name = "${var.projectname}-ec2"
+    Terraform = true
   }
 }
