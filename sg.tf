@@ -16,6 +16,6 @@ resource "aws_security_group" "sg_allow_tls" {
   }
 
   tags = {
-    Name = "roboshop_sg"
+    Name = "${var.projectname}-sg"
   }
 }

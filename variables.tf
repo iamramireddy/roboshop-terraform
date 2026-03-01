@@ -1,0 +1,31 @@
+variable "instance_type" {
+  type        = string
+  description = "EC2 instance type for the web server"
+  default     = "t3.micro"
+}
+
+variable "environment" {
+  type        = string
+  description = "Deployment environment name"
+  default = "dev"
+}  
+ 
+
+variable "ami_id" {
+  type        = string
+  description = "AMI Id"
+  default     = "ami-0f3caa1cf4417e51b"
+} 
+
+variable "projectname" {
+  type        = string
+  description = "Project Name"
+  default     = "roboshop"
+} 
+
+variable "avail_zones" {
+  type        = list(string)
+  description = "Availability zones"
+  default     = ["us-east-1a", "us-east-1b"]
+}
+
