@@ -1,7 +1,7 @@
 resource "aws_subnet" "roboshop_private_subnet" {
   vpc_id            = aws_vpc.roboshop_vpc.id
   cidr_block        = "10.0.10.0/24"
-  availability_zone = var.avail_zone
+  availability_zone = var.avail_zones[0]
 
   tags = {
     Name = "${var.projectname}_private_subnet"
@@ -12,7 +12,7 @@ resource "aws_subnet" "roboshop_private_subnet" {
 resource "aws_subnet" "roboshop_public_subnet" {
   vpc_id            = aws_vpc.roboshop_vpc.id
   cidr_block = "10.0.1.0/24"
-  availability_zone = var.avail_zone
+  availability_zone = var.avail_zones[1]
   map_public_ip_on_launch = true
 
   tags = {
